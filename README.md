@@ -8,8 +8,8 @@ We want to combine all songs in a local directory into one .mp3 file.
 
 # Resources
 1. [LocalAudioFile Code]
-2. [Million Song Dataset Code]
-3. [Pyechonest Show Attrs Example]
+2. [show_attrs.py]
+3. [echonest.remix]
 
 ### 1. Loading local audio files with [LocalAudioFile Code]
 The code for echonest.remix.audio.LocalAudioFile shows how to create a LocalAudioFile object if given the path of a song. The following code creates a single LocalAudioFile object:
@@ -39,6 +39,6 @@ This resource answers question 2: how do you access all the songs from a certain
 ### 3. Combining songs using [echonest.remix]
 Remix allows you to form AudioQuantumList objects made from AudioQuantum objects, this means that you can make a list of segments, beats, tatums, etc. By breaking each song I analyze into segments and appending the segments of each song onto an AudioQuantumList object, I can essentially create one song that is made up of all the segments from each individual song. 
 
-[Pyechonest.track Code]: http://echonest.github.io/remix/apidocs/echonest.remix.audio.LocalAudioFile-class.html
+[LocalAudioFile Code]: http://echonest.github.io/remix/apidocs/echonest.remix.audio.LocalAudioFile-class.html
 [show_attrs.py]: https://github.com/echonest/pyechonest/blob/master/examples/show_attrs.py
 [echonest.remix]: http://echonest.github.io/remix/tutorial.html
