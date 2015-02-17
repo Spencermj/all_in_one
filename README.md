@@ -34,6 +34,7 @@ AUDIO_EXTENSIONS = set(['mp3', 'm4a', 'wav', 'ogg', 'au', 'mp4'])
 _, ext = os.path.splitext(f)
     ext = ext[1:] # drop leading '.'
     return ext in AUDIO_EXTENSIONS
+```
 This resource answers question 2: how do you access all the songs from a certain directory?
 
 ### 3. Combining songs using [echonest.remix]
