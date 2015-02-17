@@ -27,9 +27,9 @@ for f in os.listdir(directory):
         if _is_audio(f):
             path = os.path.join(directory, f)
             _show_one(path)
-'''
+```
 By removing the portion of the code that prints the attributes of each song, specifically the _show_one() function, I have the necessary code to access each individual audio file in a directory. The _is_audio() function is also required to make sure each individual file accessed is an audio file, but this can be accomplished with the following code:
-'''python
+```python
 AUDIO_EXTENSIONS = set(['mp3', 'm4a', 'wav', 'ogg', 'au', 'mp4'])
 _, ext = os.path.splitext(f)
     ext = ext[1:] # drop leading '.'
