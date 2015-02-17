@@ -13,10 +13,10 @@ We want to combine all songs in a local directory into one .mp3 file.
 
 ### 1. Loading local audio files with [LocalAudioFile Code]
 The code for echonest.remix.audio.LocalAudioFile shows how to create a LocalAudioFile object if given the path of a song. The following code creates a single LocalAudioFile object:
-'''python
+```python
 import echonest.remix.audio as audio
 audiofile = audio.LocalAudioFile(input_filename)
-'''
+```
 This resource answers the question 1: how do you load a song from a local audio file?
 
 ### 2. Accessing all songs in a directory based off of [show_attrs.py]
