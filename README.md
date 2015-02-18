@@ -20,7 +20,7 @@ audiofile = audio.LocalAudioFile(input_filename)
 This resource answers the question 1: how do you load a song from a local audio file?
 
 ### 2. Accessing all songs in a directory based off of [show_attrs.py]
-From this code I'm using the `show_attrs` method to recursively access each song in a directorry. The following code from the `show_attrs` method prints all the attributes of each song in a given directory: 
+From this code I'm using the `show_attrs` method to recursively access each song in a directory. The following code from the `show_attrs` method prints all the attributes of each song in a given directory: 
 ```python
 import os
 for f in os.listdir(directory):
