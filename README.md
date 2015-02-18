@@ -38,8 +38,9 @@ _, ext = os.path.splitext(f)
 This resource answers question 2: how do you access all the songs from a certain directory?
 
 ### 3. Combining songs using [echonest.remix]
-Remix allows you to form AudioQuantumList objects made from AudioQuantum objects, this means that you can make a list of segments, beats, tatums, etc. By breaking each song I analyze into segments and appending the segments of each song onto an AudioQuantumList object, I can essentially create one song that is made up of all the segments from each individual song. 
+Using [remix.assemble] I can concatenate all the AudioDate objects in a list into a single AudioData object. After loading all the AudioData objects from a certain directory, I will be able to use the assemble module to combine all of the songs into one file that, when opened, will play all of the songs in the directory back to back.
 
 [LocalAudioFile Code]: http://echonest.github.io/remix/apidocs/echonest.remix.audio.LocalAudioFile-class.html
 [show_attrs.py]: https://github.com/echonest/pyechonest/blob/master/examples/show_attrs.py
-[echonest.remix]: http://echonest.github.io/remix/tutorial.html
+[echonest.remix]: http://echonest.github.io/remix/apidocs/
+[remix.assemble]: http://echonest.github.io/remix/apidocs/echonest.remix.audio-module.html#assemble
